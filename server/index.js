@@ -10,6 +10,7 @@ mongoose.connect(keys.mongoURI)
 
 const app = express()
 
+//all of our app.use constitute as middleware
 app.use(
   cookieSession({
     maxAge: 30 * 24 * 60 * 60 * 1000, //30 days in milliseconds
